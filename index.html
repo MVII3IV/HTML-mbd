@@ -1,0 +1,242 @@
+<!--https://mdbootstrap.com/javascript/modals/#introduction-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/compiled.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+
+    <style>
+    
+    #toast-container>div, .author-box, .badge, .btn, .card-wrapper .back, .card-wrapper .front, .card.card-cascade.wider .card-body, .card:not([class*=card-outline-]), .chip, .counter, .dropdown-content, .jumbotron, .md-pills .nav-link.active, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .pricing-card .price .version, .section-blog-fw .view, .side-nav, .social-list, .z-depth-1 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.modal-dialog.cascading-modal .nav-tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+    <a class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#frameModalTopInfoDemo" data-backdrop="false">Top</a>
+    <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#modalLoginAvatarDemo">Small </button>
+    <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#modalLRFormDemo">Medium </button>
+
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
+
+            <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+
+            <p class="animated fadeIn text-muted">MDB Team</p>
+        </div>
+    </div>
+
+
+    <section>
+
+        <div class="modal fade" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;"
+            aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Modal cascading tabs-->
+                    <div class="modal-c-tabs">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+                            <li class="nav-item waves-effect waves-light">
+                                <a class="nav-link active" data-toggle="tab" href="#panel17" role="tab">
+                                    <i class="fa fa-user mr-1"></i> Login</a>
+                            </li>
+                            <li class="nav-item waves-effect waves-light">
+                                <a class="nav-link" data-toggle="tab" href="#panel18" role="tab">
+                                    <i class="fa fa-user-plus mr-1"></i> Register</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panels -->
+                        <div class="tab-content">
+                            <!--Panel 17-->
+                            <div class="tab-pane fade in show active" id="panel17" role="tabpanel">
+
+                                <!--Body-->
+                                <div class="modal-body mb-1">
+                                    <div class="md-form form-sm">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="text" id="form2" class="form-control">
+                                        <label for="form2">Your email</label>
+                                    </div>
+
+                                    <div class="md-form form-sm">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="form3" class="form-control">
+                                        <label for="form3">Your password</label>
+                                    </div>
+                                    <div class="text-center mt-2">
+                                        <button class="btn btn-info waves-effect waves-light">Log in
+                                            <i class="fa fa-sign-in ml-1"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <div class="options text-center text-md-right mt-1">
+                                        <p>Not a member?
+                                            <a href="#" class="blue-text">Sign Up</a>
+                                        </p>
+                                        <p>Forgot
+                                            <a href="#" class="blue-text">Password?</a>
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                            <!--/.Panel 7-->
+
+                            <!--Panel 18-->
+                            <div class="tab-pane fade" id="panel18" role="tabpanel">
+
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <div class="md-form form-sm">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="text" id="form14" class="form-control">
+                                        <label for="form14">Your email</label>
+                                    </div>
+
+                                    <div class="md-form form-sm">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="form5" class="form-control">
+                                        <label for="form5">Your password</label>
+                                    </div>
+
+                                    <div class="md-form form-sm">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="form6" class="form-control">
+                                        <label for="form6">Repeat password</label>
+                                    </div>
+
+                                    <div class="text-center form-sm mt-2">
+                                        <button class="btn btn-info waves-effect waves-light">Sign up
+                                            <i class="fa fa-sign-in ml-1"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <div class="options text-right">
+                                        <p class="pt-1">Already have an account?
+                                            <a href="#" class="blue-text">Log In</a>
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            <!--/.Panel 8-->
+                        </div>
+
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLoginAvatarDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;"
+            aria-hidden="true">
+            <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Header-->
+                    <div class="modal-header">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" class="rounded-circle img-responsive" alt="Avatar photo">
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body text-center mb-1">
+
+                        <h5 class="mt-1 mb-2">Maria Doe</h5>
+
+                        <div class="md-form ml-0 mr-0">
+                            <input type="password" id="form1" class="form-control ml-0">
+                            <label for="form1" class="ml-0">Enter password</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-cyan mt-1 waves-effect waves-light">Login
+                                <i class="fa fa-sign-in ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <div class="modal fade top modal-content-clickable" id="frameModalTopInfoDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            data-backdrop="false" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-frame modal-top modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Body-->
+                    <div class="modal-body">
+                        <div class="row d-flex justify-content-center align-items-center">
+
+                            <p class="pt-3 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit
+                                nostrum quos..</p>
+
+                            <a type="button" class="btn btn-primary-modal waves-effect waves-light">Get it now
+                                <i class="fa fa-diamond ml-1"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">No, thanks</a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/compiled.js"></script>
+</body>
+
+</html>
